@@ -155,15 +155,11 @@ Arguments
 Typical Usage
 -------------
 
-### When you use nexus index
 
 ```
-mvn exec:java -Dexec.args="-id UPDATE-CENTER-ID -h /dev/null -o PATH_TO_WRITE_update-center.json -repository http://YOURSERVER/PATH_TO_REPOSITORY/ -remoteIndex REL_PATH_TO_nexus-maven-repository-index.gz -repositoryName 'REPOSITORY_NAME' -directLink -nowiki -key PATH_TO_KEY_FILE -certificate PATH_TO_CERTIFICATE_FILE -root-certificate PATH_TO_CERTIFICATE_FILE"
+mvn exec:java -Dexec.args="-id xdzmkus-update-center -h /dev/null -o update-center.json -r release-history.json -repository https://github.com/xdzmkus/jenkins-update-center2/plugins/ -hpiDirectory plugins\ -nowiki -key certs\xdzmkus-update-center.key -certificate certs\xdzmkus-update-center.crt -root-certificate certs\xdzmkus-update-center.crt -pretty"
 ```
 
-### When you do not use nexus index
 
-```
-mvn exec:java -Dexec.args="-id UPDATE-CENTER-ID -h /dev/null -o PATH_TO_WRITE_update-center.json -repository http://YOURSERVER/PATH_TO_REPOSITORY/ -hpiDirectory PATH_TO_LOCAL_REPOSITORY -nowiki -key PATH_TO_KEY_FILE -certificate PATH_TO_CERTIFICATE_FILE -root-certificate PATH_TO_CERTIFICATE_FILE"
-```
+
 
