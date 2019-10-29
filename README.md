@@ -157,7 +157,7 @@ Typical Usage
 
 
 ```
-mvn exec:java -Dexec.args="-id xdzmkus-update-center -h /dev/null -o update-center.json -r release-history.json -repository https://github.com/xdzmkus/jenkins-update-center2/plugins/ -hpiDirectory plugins\ -nowiki -key certs\xdzmkus-update-center.key -certificate certs\xdzmkus-update-center.crt -root-certificate certs\xdzmkus-update-center.crt -pretty"
+mvn exec:java -Dexec.args="-id xdzmkus-update-center -h /dev/null -o update-center.json -r release-history.json -repository https://github.com/xdzmkus/jenkins-update-center2/blob/master/plugins/ -hpiDirectory plugins\ -nowiki -key certs\xdzmkus-update-center.key -certificate certs\xdzmkus-update-center.crt -root-certificate certs\xdzmkus-update-center.crt -pretty"
 ```
 
 
